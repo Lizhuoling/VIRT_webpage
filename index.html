@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=0.2">
+  <meta charset="utf-8">
+  <meta name="description" content="VIRT">
+  <meta name="keywords" content="Embodied AI, Robotic Manipulation">
+  <title>VIRT</title>
+
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+
+
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/VIRT_logo.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+
+  <style>
+    .is-size-5.publication-authors .affiliations-block {
+      margin-left: 60px;
+      margin-right: 60px;
+    }
+  </style>
+
+  <style>
+    .is-abstract {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+  </style>
+
+  <style>
+    .is-controllable {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+
+<style>
+  video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+</style>
+
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="columns is-centered">
+      <div class="column has-text-centered">
+        <h1 class="title is-1 publication-title" style="font-size: 40px;">
+          <img src="./static/images/VIRT_logo.png" alt="图标描述" style="width: 80; height: 146px; vertical-align: middle; margin-right: 0px; position: relative; top: -8px;">
+          VIRT: Vision Instructed Transformer for Robotic Manipulation
+        </h1>
+        <div class="is-size-5 publication-authors">
+          <span class="author-block">
+            <a href="https://lizhuoling.github.io/">Zhuoling Li</a><sup>1</sup></a>&nbsp</a>&nbsp  
+          </span>
+          <span class="author-block">
+            <a href="https://scholar.google.com/citations?user=pDXqJlUAAAAJ">Liangliang Ren</a><sup>2</sup></a>&nbsp</a>&nbsp    
+          </span>
+          <span class="author-block">
+            <a href="https://yancie-yjr.github.io/publications/">Jinrong Yang</a><sup>2</sup></a>&nbsp</a>&nbsp    
+          </span>
+          <span class="author-block">
+            <a href="https://github.com/zdzhaoyong">Yong Zhao</a><sup>2</sup></a>&nbsp</a>&nbsp    
+          </span>
+          <span class="author-block">
+            <a href="https://xywu.me/">Xiaoyang Wu</a><sup>1</sup></a>&nbsp</a>&nbsp    
+          </span>
+          <span class="author-block">
+            <a href="https://tonyxuqaq.github.io/">Zhenhua Xu</a><sup>1</sup></a>&nbsp</a>&nbsp    
+          </span>
+          <span class="author-block">
+            <a href="https://xbai.vlrlab.net/">Xiang Bai</a><sup>3</sup></a>&nbsp</a>&nbsp    
+          </span>
+          <span class="author-block">
+            <a href="https://hszhao.github.io/">Hengshuang Zhao</a><sup>1</sup></a>&nbsp</a>&nbsp    
+          </span>
+        </div>
+
+        <div class="is-size-5 publication-authors">
+          <span class="affiliations-block"><sup>1</sup>HKU</span>
+          <span class="affiliations-block"><sup>2</sup>CVTE</span>
+          <span class="affiliations-block"><sup>3</sup>HUST</span>
+        </div>
+
+        <div class="column has-text-centered">
+          <div class="publication-links">
+            <span class="link-block">
+              <a href=   "xxx" 
+                  class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                    <i class="fas fa-file-pdf"></i>
+                </span>
+                <span>Paper</span>
+              </a>
+            </span>
+            <span class="link-block">
+              <a href="https://github.com/Lizhuoling/VIRT"
+                 class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                    <i class="fab fa-github"></i>
+                </span>
+                <span>Code</span>
+                </a>
+            </span>
+            <span class="link-block">
+              <a href="https://huggingface.co/datasets/Zhuoling98/VIRT_data"
+                  class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                    <i class="fab fa-github"></i>
+                </span>
+                <span>Data</span>
+              </a>
+            </span>
+            <span class="link-block">
+              <a href="https://huggingface.co/Zhuoling98/VIRT_droid_pretrain"
+                  class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                    <i class="fab fa-github"></i>
+                </span>
+                <span>Model</span>
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            &nbsp;&nbsp;&nbsp;&nbsp; Robotic manipulation, owing to its multi-modal nature, often faces significant training ambiguity, necessitating explicit 
+            instructions to clearly delineate the manipulation details in tasks. In this work, we highlight that vision instruction is naturally more 
+            comprehensible to recent robotic policies than the commonly adopted text instruction, as these policies are born with some vision understanding 
+            ability like human infants. Building on this premise and drawing inspiration from cognitive science, we introduce the robotic imagery paradigm, which 
+            realizes large-scale robotic data pre-training without text annotations. Additionally, we propose the robotic gaze strategy that emulates the human 
+            eye gaze mechanism, thereby guiding subsequent actions and focusing the attention of the policy on the manipulated object. Leveraging these innovations, 
+            we develop VIRT, a fully Transformer-based policy. We design comprehensive tasks using both a physical robot and simulated environments to assess the 
+            efficacy of VIRT. The results indicate that VIRT can complete very competitive tasks like ``opening the lid of a tightly sealed bottle'', and the 
+            proposed techniques boost the success rates of the baseline policy on diverse challenging tasks from nearly 0% to more than 65%.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="section">
+  <div style="background-color: #f5f5f5;">
+    <div class="container is-controllable">
+      <div class="columns is-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3" style="text-align: center;">Key Ideas</h2>
+          <div class="content has-text-justified">
+            <p>
+              &nbsp;&nbsp;&nbsp;&nbsp; In VIRT, we first adopt the proposed robotic imagery pre-training paradigm 
+              to pre-train VIRT based on large-scale robotic manipulation data. Then, we fine-tune the pre-trained 
+              policy on specific downstream tasks with the robotic gaze strategy. After these two phases of 
+              training, VIRT is able to complete diverse challenging tasks in both real-robot and simulated 
+              environments.
+            </p>
+          </div>
+
+          <div class="image-area">
+            <img src="./static/images/teaser.png" alt="pipeline" width="100%">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section"  style="margin-top: 0; padding-top: 30px;">
+  <div class="container is-controllable">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3" style="text-align: center;">Open the Lid</h2>
+        <div class="content has-text-justified">
+          <p>
+            &nbsp;&nbsp;&nbsp;&nbsp; In this video, we show how VIRT completes the task of opening the lid of a 
+            tightly sealed bottle. This task mainly tests the precise manipulation ability of a policy. Interestingly, 
+            we can observe that when the gripper grasps at a false place, the policy knows to adjust it automatically. 
+            The video is played in the original speed. 
+          <p>
+        </div>
+        <div class="center" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+          <iframe width="100%" height="100%" style="position: absolute; top: 0; left: 0;" 
+                  src="https://www.youtube.com/embed/X5h-rVUezDI" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section"  style="margin-top: 0; padding-top: 30px;">
+  <div style="background-color: #f5f5f5;">
+    <div class="container is-controllable">
+      <div class="columns is-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3" style="text-align: center;">Pour Blueberries</h2>
+          <div class="content has-text-justified">
+            <p>
+              &nbsp;&nbsp;&nbsp;&nbsp; In this video, we show how VIRT completes the task of pouring blueberries into the
+              juicer cup. In this task, the robot needs to perform diverse kinds of actions and manipulate multiple objects,
+              thereby evaluating the long-term manipulation capability of the policy. The video is played in the original speed.
+            <p>
+          </div>
+          <div class="center" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+            <iframe width="100%" height="100%" style="position: absolute; top: 0; left: 0;" 
+                    src="https://www.youtube.com/embed/Kh4LSCWoWMA" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section"  style="margin-top: 0; padding-top: 30px;">
+  <div class="container is-controllable">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3" style="text-align: center;">Clean the Table</h2>
+        <div class="content has-text-justified">
+          <p>
+            &nbsp;&nbsp;&nbsp;&nbsp; In this video, the robot needs to move the three plates on the small table 
+            according to the random order given in the test time. In the shown trial, the order is purple, pink, 
+            and blue, and the order information is provided to VIRT through our proposed vision instruction. This tasks
+            verifies the instruction following performance of a policy. The video is played in the original speed.
+          <p>
+        </div>
+        <div class="center" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+          <iframe width="100%" height="100%" style="position: absolute; top: 0; left: 0;" 
+                  src="https://www.youtube.com/embed/RmigrWTDSjo" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen>
+          </iframe>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section"  style="margin-top: 0; padding-top: 30px;">
+  <div style="background-color: #f5f5f5;">
+    <div class="container is-controllable">
+      <div class="columns is-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3" style="text-align: center;">Move a Single Box</h2>
+          <div class="content has-text-justified">
+            <p>
+              &nbsp;&nbsp;&nbsp;&nbsp; In this video, we show how VIRT completes the Move a Single Box task. This task
+              is established in Isaac Gym and relatively easier. The robot needs to move the box on the table into the
+              container. The video is played in the original speed.
+            <p>
+          </div>
+          <div class="center" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+            <iframe width="100%" height="100%" style="position: absolute; top: 0; left: 0;" 
+                    src="https://www.youtube.com/embed/7VqUpb1okyw" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section"  style="margin-top: 0; padding-top: 30px;">
+  <div style="background-color: #f5f5f5;">
+    <div class="container is-controllable">
+      <div class="columns is-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3" style="text-align: center;">Transfer the Specified Box</h2>
+          <div class="content has-text-justified">
+            <p>
+              &nbsp;&nbsp;&nbsp;&nbsp; In this video, we show how VIRT completes the Transfer the Specified Box task. This task
+              is established in Isaac Gym. As shown, there are five boxes in different colors on the table. During test, a random
+              color of box is specified, and the robot needs to move the box in this color into the container. In the shown case, 
+              the green color is specified. The video is played in the original speed.
+            <p>
+          </div>
+          <div class="center" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+            <iframe width="100%" height="100%" style="position: absolute; top: 0; left: 0;" 
+                    src="https://www.youtube.com/embed/RFfkP4ys8G0" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section"  style="margin-top: 0; padding-top: 30px;">
+  <div style="background-color: #f5f5f5;">
+    <div class="container is-controllable">
+      <div class="columns is-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3" style="text-align: center;">Stack the Specified Boxes</h2>
+          <div class="content has-text-justified">
+            <p>
+              &nbsp;&nbsp;&nbsp;&nbsp; In this video, we show how VIRT completes the Stack the Specified Boxes task. This task
+              is established in Isaac Gym. During test, a random instruction is generated like ''first place the purple box in the 
+              container and then stack the blue box on this purple box''. The robot needs to follow the given instruction to complete 
+              this task. The video is played in the original speed.
+            <p>
+          </div>
+          <div class="center" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+            <iframe width="100%" height="100%" style="position: absolute; top: 0; left: 0;" 
+                    src="https://www.youtube.com/embed/7SMmLtkR4Lk" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- To Do: Replace the arxiv paper description. -->
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{li2024virt,
+      title={VIRT: Vision Instructed Transformer for Robotic Manipulation},
+      author={Zhuoling, Li and Liangliang, Ren and Jinrong, Yang and Yong, Zhao and others},
+      journal={arXiv preprint arXiv:xxxx.xxxxx},
+      year={2024}
+    }</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="content">
+        <p>
+          The template is borrowed from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
