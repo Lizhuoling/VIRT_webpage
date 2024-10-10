@@ -1,4 +1,4 @@
-# LARM
+# VIRT
 
 This is the repository that contains source code for the webpage of VIRT.
 
@@ -7,7 +7,7 @@ If you find VIRT useful for your work please cite:
 @article{li2024virt,
       title={VIRT: Vision Instructed Transformer for Robotic Manipulation},
       author={Zhuoling, Li and Liangliang, Ren and Jinrong, Yang and Yong, Zhao and others},
-      journal={arXiv preprint arXiv:xxxx.xxxxx},
+      journal={arXiv preprint arXiv:2410.07169},
       year={2024}
     }
 ```
