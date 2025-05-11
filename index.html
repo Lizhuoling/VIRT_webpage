@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="description" content="VIRT">
   <meta name="keywords" content="Embodied AI, Robotic Manipulation">
-  <title>VIRT</title>
+  <title>VIP</title>
 
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -91,7 +91,7 @@
       <div class="column has-text-centered">
         <h1 class="title is-1 publication-title" style="font-size: 40px;">
           <img src="./static/images/VIRT_logo.png" alt="图标描述" style="width: 80; height: 146px; vertical-align: middle; margin-right: 0px; position: relative; top: -8px;">
-          VIRT: Vision Instructed Transformer for Robotic Manipulation
+          VIP: Vision Instructed Pre-training for Robotic Manipulation
         </h1>
         <div class="is-size-5 publication-authors">
           <span class="author-block">
@@ -180,45 +180,22 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            &nbsp;&nbsp;&nbsp;&nbsp; Robotic manipulation, owing to its multi-modal nature, often faces significant training ambiguity, necessitating explicit 
-            instructions to clearly delineate the manipulation details in tasks. In this work, we highlight that vision instruction is naturally more 
-            comprehensible to recent robotic policies than the commonly adopted text instruction, as these policies are born with some vision understanding 
-            ability like human infants. Building on this premise and drawing inspiration from cognitive science, we introduce the robotic imagery paradigm, which 
-            realizes large-scale robotic data pre-training without text annotations. Additionally, we propose the robotic gaze strategy that emulates the human 
-            eye gaze mechanism, thereby guiding subsequent actions and focusing the attention of the policy on the manipulated object. Leveraging these innovations, 
-            we develop VIRT, a fully Transformer-based policy. We design comprehensive tasks using both a physical robot and simulated environments to assess the 
-            efficacy of VIRT. The results indicate that VIRT can complete very competitive tasks like ``opening the lid of a tightly sealed bottle'', and the 
-            proposed techniques boost the success rates of the baseline policy on diverse challenging tasks from nearly 0% to more than 65%.
+            &nbsp;&nbsp;&nbsp;&nbsp; The effectiveness of scaling up training data in robotic manipulation is still limited. 
+            A primary challenge in manipulation is the tasks are diverse, and the trained policy would be confused if the task 
+            targets are not specified clearly. Existing works primarily rely on text instruction to describe targets. However, we 
+            reveal that current robotic data cannot train policies to understand text instruction effectively, and vision is much 
+            more comprehensible. Therefore, we introduce utilizing vision instruction to specify targets. A straightforward 
+            implementation is training a policy to predict the intermediate actions linking the current observation and a future 
+            image. Nevertheless, a single future image does not describe the task target in insufficient detail. To handle this 
+            problem, we propose to use sparse point flows to provide more detailed information. Extensive tasks are designed based 
+            on real and simulated environments to evaluate the effectiveness of our vision instructed pre-training (VIP) method. 
+            The results indicate VIP improves the performance on diverse tasks significantly, and the derived policy can complete 
+            competitive tasks like ``opening the lid of a tightly sealed bottle''.
           </p>
         </div>
       </div>
     </div>
 
-  </div>
-</section>
-
-<section class="section">
-  <div style="background-color: #f5f5f5;">
-    <div class="container is-controllable">
-      <div class="columns is-centered">
-        <div class="column is-four-fifths">
-          <h2 class="title is-3" style="text-align: center;">Key Ideas</h2>
-          <div class="content has-text-justified">
-            <p>
-              &nbsp;&nbsp;&nbsp;&nbsp; In VIRT, we first adopt the proposed robotic imagery pre-training paradigm 
-              to pre-train VIRT based on large-scale robotic manipulation data. Then, we fine-tune the pre-trained 
-              policy on specific downstream tasks with the robotic gaze strategy. After these two phases of 
-              training, VIRT is able to complete diverse challenging tasks in both real-robot and simulated 
-              environments.
-            </p>
-          </div>
-
-          <div class="image-area">
-            <img src="./static/images/teaser.png" alt="pipeline" width="100%">
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
 </section>
 
@@ -229,7 +206,7 @@
         <h2 class="title is-3" style="text-align: center;">Open the Lid</h2>
         <div class="content has-text-justified">
           <p>
-            &nbsp;&nbsp;&nbsp;&nbsp; In this video, we show how VIRT completes the task of opening the lid of a 
+            &nbsp;&nbsp;&nbsp;&nbsp; In this video, we show how the proposed VIRT policy completes the task of opening the lid of a 
             tightly sealed bottle. This task mainly tests the precise manipulation ability of a policy. Interestingly, 
             we can observe that when the gripper grasps at a false place, the policy knows to adjust it automatically. 
             The video is played in the original speed. 
@@ -390,7 +367,7 @@
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
     <pre><code>@article{li2024virt,
-      title={VIRT: Vision Instructed Transformer for Robotic Manipulation},
+      title={VIP: Vision Instructed Pre-training for Robotic Manipulation},
       author={Zhuoling, Li and Liangliang, Ren and Jinrong, Yang and Yong, Zhao and others},
       journal={arXiv preprint arXiv:2410.07169},
       year={2024}
