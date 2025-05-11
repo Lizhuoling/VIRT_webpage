@@ -1,11 +1,11 @@
 # VIRT
 
-This is the repository that contains source code for the webpage of VIRT.
+This is the official implementation of the paper "VIP: Vision Instructed Pre-training for Robotic Manipulation" published in ICML2025. It contains the training and inference code for the proposed end-to-end manipulation policy, VIRT.
 
 If you find VIRT useful for your work please cite:
 ```
 @article{li2024virt,
-      title={VIRT: Vision Instructed Transformer for Robotic Manipulation},
+      title={VIP: Vision Instructed Pre-training for Robotic Manipulation},
       author={Zhuoling, Li and Liangliang, Ren and Jinrong, Yang and Yong, Zhao and others},
       journal={arXiv preprint arXiv:2410.07169},
       year={2024}
